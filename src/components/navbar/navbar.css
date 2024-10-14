@@ -1,4 +1,37 @@
-.bg{
-  background-color: red;
-  height: 100px;
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-brown);
+  height: 15dvh;
+  padding: 0 50px;
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+.navbar_menu{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar_menu > img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar_menu__hamb img{
+  width: 40px;
+  height: 40px;
 }
