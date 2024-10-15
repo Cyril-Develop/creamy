@@ -2,11 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-brown);
   height: 15dvh;
-  padding: 0 50px;
   color: var(--color-white);
-  border-bottom: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-grey);
 }
 
 nav ul{
@@ -16,7 +14,23 @@ nav ul{
 }
 
 nav ul li {
+  position: relative;
   cursor: pointer;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  bottom: 3px;
+  left: 0;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+  transition: width .2s ease-in-out;
 }
 
 .navbar_menu{
