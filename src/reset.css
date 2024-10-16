@@ -38,8 +38,3 @@ ul{
   font-weight: 400;
   font-style: normal;
 }
-
-.page{
-  padding: 0 80px;
-  background-color: var(--color-brown);
-}

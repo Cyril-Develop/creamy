@@ -4,8 +4,8 @@ import hamb from "../../assets/hamb.png";
 
 const Navbar = () => {
   return (
-    <div className="page">
-      <div className="navbar">
+    <div className="navbar">
+      <div className="navbar_wrapper">
         <h1>Creamy</h1>
         <nav>
           <ul>
@@ -16,9 +16,9 @@ const Navbar = () => {
             <li>Ingredients</li>
           </ul>
         </nav>
-        <div className="navbar_menu">
+        <div className="navbar_wrapper_menu">
           <img src={profile} alt="profile" />
-          <div className="navbar_menu__hamb">
+          <div>
             <img src={hamb} alt="hamb" />
           </div>
         </div>
